@@ -1,0 +1,113 @@
+body {
+  background-color: #272727;
+  color: white; }
+  body .pitanja {
+    width: 100%;
+    display: flex;
+    background-color: #272727; }
+    body .pitanja button {
+      border: none;
+      background-color: #14A76C; }
+    body .pitanja .pitanje {
+      -ms-flex: 1;
+      flex: 1;
+      width: 25%;
+      text-align: center;
+      color: #747474; }
+    body .pitanja .selected {
+      color: #FFE400; }
+    body .pitanja .spremljeniOdgovori {
+      background-color: #FF652F; }
+  body .main {
+    width: 90%;
+    margin: auto;
+    text-align: center; }
+  body .odgovori {
+    text-align: center; }
+    body .odgovori button {
+      background-color: #747474;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 40%; }
+    body .odgovori button:hover {
+      color: #FFE400; }
+    body .odgovori .selected {
+      background-color: #14A76C; }
+    @media only screen and (min-width: 600px) {
+      body .odgovori button {
+        width: 80%;
+        max-width: 800px; } }
+  body .next {
+    text-align: center;
+    margin-top: 30px; }
+    body .next button {
+      margin: auto;
+      background-color: #14A76C;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer; }
+    body .next button:disabled {
+      background-color: #747474;
+      color: lightgray; }
+  body .center {
+    text-align: center; }
+  body .error {
+    color: red;
+    text-align: center; }
+  body .fade-out {
+    animation: fadeOut ease 3s;
+    -webkit-animation: fadeOut ease 3s;
+    -moz-animation: fadeOut ease 3s;
+    -o-animation: fadeOut ease 3s;
+    -ms-animation: fadeOut ease 3s;
+    animation-delay: 3s; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes fadeOut {
+  body 0% {
+    opacity: 1; }
+  body 100% {
+    opacity: 0; } }
+  @media only screen and (min-width: 600px) {
+    body {
+      width: 80%;
+      margin: auto;
+      margin-top: 5px; }
+      body .pitanja .border-left {
+        border-left: 1px solid black; }
+      body .pitanja button {
+        padding: 12px 36px; } }

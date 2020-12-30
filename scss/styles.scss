@@ -1,0 +1,173 @@
+$main: #14A76C;
+$secondary: #FF652F;
+$accent: #FFE400;
+$black: #272727;
+$grey: #747474;
+
+body {
+    background-color: $black;
+    color: white;
+
+    .pitanja {
+        width: 100%;
+        display: flex;
+        background-color: $black;
+        button {
+            border: none;
+            background-color: $main;
+        }
+        .pitanje {
+            -ms-flex: 1;
+            flex: 1;
+            width: 25%;
+            text-align: center;
+            color: $grey;
+        }
+        .selected {
+            color:$accent;
+        }
+        .spremljeniOdgovori {
+            background-color: $secondary;
+        }
+    
+        
+        
+    }
+
+    .main {    
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .odgovori {
+        text-align: center;
+       
+        button {
+            background-color: $grey;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+    
+            width: 40%;
+    
+        }
+        button:hover {
+            color: $accent;
+        }
+        .selected {
+            background-color: $main;
+        }
+        @media only screen and (min-width: 600px) {
+            button {
+                width: 80%;
+                max-width: 800px;
+            }
+        }
+    }
+    
+    .next {    
+        text-align: center;
+        margin-top: 30px;
+        button {
+            margin: auto;
+            background-color: $main;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        button:disabled  {
+            background-color: $grey;
+            color: lightgray;
+        }
+        
+    }
+    
+    
+    .center {
+        text-align: center;
+    }
+    
+    .error {
+        color: red;
+        text-align: center;
+    }
+    .fade-out {
+        
+        animation: fadeOut ease 3s;
+        -webkit-animation: fadeOut ease 3s;
+        -moz-animation: fadeOut ease 3s;
+        -o-animation: fadeOut ease 3s;
+        -ms-animation: fadeOut ease 3s;
+        animation-delay: 3s;
+      }
+      @keyframes fadeOut {
+        0% {
+          opacity:1;
+        }
+        100% {
+          opacity:0;
+        }
+      }
+      
+      @-moz-keyframes fadeOut {
+        0% {
+          opacity:1;
+        }
+        100% {
+          opacity:0;
+        }
+      }
+      
+      @-webkit-keyframes fadeOut {
+        0% {
+          opacity:1;
+        }
+        100% {
+          opacity:0;
+        }
+      }
+      
+      @-o-keyframes fadeOut {
+        0% {
+          opacity:1;
+        }
+        100% {
+          opacity:0;
+        }
+      }
+      
+      @-ms-keyframes fadeOut {
+        0% {
+          opacity:1;
+        }
+        100% {
+          opacity:0;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 80%;
+        margin: auto;
+        margin-top: 5px;
+        .pitanja {
+            .border-left {
+                border-left: 1px solid black;
+            }
+            button {
+                padding: 12px 36px;
+            }
+        }        
+    }
+}
+
